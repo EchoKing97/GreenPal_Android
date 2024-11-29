@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--网络安全配置文件，允许特定的明文通信-->
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <!-- 添加对10.0.2.2的明文流量许可 -->
+        <domain tools:ignore="NetworkSecurityConfig">10.0.2.2</domain>
+        <!-- 注意：IP地址没有子域，所以不需要includeSubdomains属性 -->
+    </domain-config>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

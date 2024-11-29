@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string-array name="plant_categories">
+        <item>裸子植物</item>
+        <item>被子植物</item>
+        <item>地衣植物</item>
+        <item>苔藓植物</item>
+        <item>蕨类植物</item>
+    </string-array>
+</resources>

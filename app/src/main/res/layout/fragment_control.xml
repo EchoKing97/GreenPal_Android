@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/inside_background">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <!-- 图标和文本 -->
+        <ImageView
+                android:id="@+id/your_plants_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_your_plants"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your plants"
+                android:textSize="21sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_toEndOf="@id/your_plants_icon"
+                android:layout_alignTop="@id/your_plants_icon" />
+
+        <ImageView
+                android:id="@+id/your_plants_icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_your_plants"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp" android:translationX="400px"/>
+
+        <Button
+                android:id="@+id/add_plant_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="增加植物" />
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/plants_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

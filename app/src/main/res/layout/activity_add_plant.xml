@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/inside_background">
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_create_plant"
+            android:layout_marginEnd="8dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create your plant"
+                    android:textSize="23sp"
+                    android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <!-- ImageView for plant image -->
+        <ImageView
+                android:id="@+id/plant_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+        <!-- EditText for plant name -->
+        <EditText
+                android:id="@+id/plant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="植物名"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_category"
+                    android:layout_marginEnd="8dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="植物类别"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+            <Spinner
+                    android:id="@+id/plant_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:padding="12dp"
+                    android:spinnerMode="dropdown" android:translationY="45px"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+            <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_preferences"
+                    android:layout_marginEnd="8dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="植物喜好"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+            <CheckBox
+                    android:id="@+id/plant_preference_shade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="喜阴"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+            <CheckBox
+                    android:id="@+id/plant_preference_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="趋光"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+            <CheckBox
+                    android:id="@+id/plant_preference_drought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="耐旱"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+            <CheckBox
+                    android:id="@+id/plant_preference_moisture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="喜湿"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+            <CheckBox
+                    android:id="@+id/plant_preference_warmth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="喜暖"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+            <CheckBox
+                    android:id="@+id/plant_preference_barren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="耐瘠"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Button to create plant -->
+        <Button
+                android:id="@+id/create_plant_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:text="创建植物"
+                android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

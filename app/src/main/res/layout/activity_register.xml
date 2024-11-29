@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--注册界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_background" />
+
+    <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="138dp"
+            android:layout_height="136dp"
+            android:src="@drawable/app_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GreenPal"
+            android:textSize="24sp"
+            android:textColor="#1B5E20"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@id/app_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-41dp" android:translationX="-10px"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_user" />
+
+        <EditText
+                android:id="@+id/username_register"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Username"
+                android:inputType="text"
+                android:background="@drawable/edittext_rounded_corners" />
+    </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_phone" />
+        <EditText
+                android:id="@+id/phone_register"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:background="@drawable/edittext_rounded_corners" />
+    </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_init_password" />
+        <EditText
+                android:id="@+id/password_register"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_rounded_corners" />
+    </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_password" />
+        <EditText
+                android:id="@+id/confirm_password_register"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_rounded_corners" />
+    </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/button_rounded_corners_green" />
+
+    </LinearLayout>
+</RelativeLayout>

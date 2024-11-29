@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FirstTest</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_control">控制</string>
+    <string name="title_profile">个人中心</string>
+
+    <string name="plant_type_prompt">Select Plant Type</string>
+    <string name="plant_preference_prompt">Select Plant Preference</string>
+
+    <string-array name="plant_types">
+        <item>Indoor</item>
+        <item>Outdoor</item>
+        <item>Water Plants</item>
+    </string-array>
+    <string-array name="plant_preferences">
+        <item>Sunlight</item>
+        <item>Shade</item>
+        <item>Moderate</item>
+    </string-array>
+</resources>

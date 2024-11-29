@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/inside_background">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" android:translationY="200px">
+        <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/app_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" android:translationY="-100px"/>
+
+        <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GreenPal"
+                android:textSize="20sp"
+                android:textColor="#1B5E20"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-41dp" android:translationY="-50px"/>
+
+        <!-- 个人头像和用户信息 -->
+        <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:onClick="onProfileImageClick"/>
+
+        <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"/>
+
+        <TextView
+                android:id="@+id/profile_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UID:"
+                android:textSize="17sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- 用户设置 -->
+        <Button
+                android:id="@+id/settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- 退出账号按钮 -->
+        <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出账号"
+                android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>
